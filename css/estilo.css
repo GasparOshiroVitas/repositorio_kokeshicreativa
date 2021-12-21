@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0; }
 
+/*Variables*/
+/*Header-----------*/
 .header {
-  background-color: #efd9b4;
+  background-color: #D6A692;
   display: flex;
   justify-content: space-around;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
   .header h1 {
     justify-content: flex-start;
     font-size: 40px;
@@ -24,8 +26,125 @@
   .header li {
     display: flex;
     list-style: none;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding: 10px; }
     .header li a {
+      display: flex;
       text-decoration: none;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: normal; }
+
+/*Mains------------*/
+.mainIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efd9b4fa;
+  height: 800px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5%; }
+  .mainIndex section {
+    display: flex;
+    background-image: url(../img/imagen3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px; }
+  .mainIndex div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80%; }
+  .mainIndex h2 {
+    font-size: 30px; }
+  .mainIndex p {
+    font-size: 20px; }
+
+.mainPresentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efd9b4fa;
+  height: 800px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5%; }
+  .mainPresentacion section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .mainPresentacion h2 {
+    font-size: 30px;
+    padding-left: 3%; }
+  .mainPresentacion p {
+    font-size: 20px;
+    padding-left: 3%; }
+
+.mainInspiracion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efd9b4fa;
+  height: 800px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5%; }
+  .mainInspiracion section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .mainInspiracion h2 {
+    font-size: 30px;
+    padding-left: 3%; }
+  .mainInspiracion p {
+    font-size: 20px;
+    padding-left: 3%; }
+
+.mainProducto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #efd9b4fa;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5%; }
+  .mainProducto section {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; }
+  .mainProducto img {
+    height: 470px;
+    width: 422px;
+    padding-top: 3%; }
+
+.mainContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efd9b4fa;
+  height: 800px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5%;
+  background-image: url(../img/imagen4.png);
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .mainContacto section {
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius: 5px;
+    padding: 5%;
+    margin-bottom: 5%; }
+
+/*Footer-----------------*/
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #4D6160;
+  padding: 2%; }
+  .footer span {
+    color: #D6A692; }
+  .footer a {
+    text-decoration: none;
+    color: #D6A692;
+    margin-left: 2%; }
+
+.bgBody {
+  background-image: url(../img/imagenfondoindex.png); }

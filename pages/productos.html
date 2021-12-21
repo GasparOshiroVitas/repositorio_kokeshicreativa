@@ -14,72 +14,91 @@
     <!--CSS Personal-->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-    <header class="header">
+<body class="bgBody">
+    <header class="header justify-content-around container">
         <h1>Kokeshi Creativa</h1>
         <nav>
-            <ul class="headerNavUl">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="presentacion.html">Presentación</a></li>
-                <li><a href="inspiracion.html">Inspiración</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul class="nav justify-content-center container">
+                <li class="nav-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="presentacion.html">Presentación</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inspiracion.html">Inspiración</a>
+                </li>
+                <li class="nav-item">
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main class="mainProductos">
-            <h2 class="h2Productos">Algunos de nuestros productos disponibles</h2>
-                <!--<div class="divProductosImagenes">
-                    <img class="imageProd1" id= "imageprod1" src="../img/imagen5.png" alt="">
-                    <img class="imageProd2" id= "imageprod2" src="../img/imagen6.png" alt="">
-                    <img class="imageProd3" id= "imageprod3" src="../img/imagen7.png" alt="">
-                    <img class="imageProd4" id= "imageprod4" src="../img/imagen8.png" alt="">
-                    <img class="imageProd5" id= "imageprod5" src="../img/imagen9.png" alt="">
-                    <img class="imageProd6" id= "imageprod6" src="../img/imagen10.png" alt="">
-                    <img class="imageProd7" id= "imageprod7" src="../img/imagen11.png" alt="">
-                    <img class="imageProd8" id= "imageprod8" src="../img/imagen12.png" alt="">
-                    <img class="imageProd9" id= "imageprod9" src="../img/imagen13.png" alt="">
-                    <img class="imageProd10" id= "imageprod10" src="../img/imagen14.png" alt="">
-                    <img class="imageProd11" id= "imageprod11" src="../img/imagen16.png" alt="">
-                    <img class="imageProd12" id= "imageprod12" src="../img/imagen17.png" alt="">
-                    <img class="imageProd13" id= "imageprod13" src="../img/imagen18.png" alt="">
-                    <img class="imageProd14" id= "imageprod14" src="../img/imagen19.png" alt="">
-                </div>-->
-                <div id="carouselExampleControls" class="carousel slide positionCarousel" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/imagen7.png" class="d-block w-100" alt="...">
+    <main class="mainProducto container">
+            <h2>Algunos de nuestros productos disponibles</h2>
+            <section class="container">
+                <div class="row">
+                    <div class="col">
+                        <img class="imageProd1" id= "imageprod1" src="../img/imagen5.png" alt="">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../img/imagen6.png" class="d-block w-100" alt="...">
+                    <div class="col">
+                        <img class="imageProd2" id= "imageprod2" src="../img/imagen6.png" alt="">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../img/imagen8.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/imagen9.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/imagen10.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/imagen11.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/imagen14.png" class="d-block w-100" alt="...">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                    </button>
                 </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="imageProd4" id= "imageprod4" src="../img/imagen8.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="imageProd5" id= "imageprod5" src="../img/imagen9.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="imageProd7" id= "imageprod7" src="../img/imagen11.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="imageProd8" id= "imageprod8" src="../img/imagen12.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="imageProd10" id= "imageprod10" src="../img/imagen14.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="imageProd11" id= "imageprod11" src="../img/imagen16.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="imageProd12" id= "imageprod12" src="../img/imagen17.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="imageProd3" id= "imageprod3" src="../img/imagen7.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="imageProd6" id= "imageprod6" src="../img/imagen10.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="imageProd9" id= "imageprod9" src="../img/imagen13.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="imageProd13" id= "imageprod13" src="../img/imagen18.png" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="imageProd14" id= "imageprod14" src="../img/imagen19.png" alt="">
+                    </div>
+                </div>
+            </section>    
     </main>
-    <footer >
+    <footer class="footer container">
         <span class="spanFooter">Redes Sociales:</span>
         <a href="https://www.facebook.com/kokeshicreativa" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/kokeshicreativa/?hl=es-la" target="_blank">Instagram</a>

@@ -14,64 +14,48 @@
     <!-- CSS Personal-->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-    <header class="header">
+<body class="bgBody">
+    <header class="header justify-content-around container">
         <h1 >Kokeshi Creativa</h1>
         <nav>
-            <ul class="headerNavUl">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="presentacion.html">Presentación</a></li>
-                <li><a href="inspiracion.html">Inspiración</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul class="nav justify-content-center container">
+                <li class="nav-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="presentacion.html">Presentación</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inspiracion.html">Inspiración</a>
+                </li>
+                <li class="nav-item">
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main class="mainContacto">
+    <main class="mainContacto container">
         <section class="sectionContacto">
             <form action="">
                 <fieldset class="fieldsetContacto">
                     <legend class="legendContacto">Envianos tu consulta</legend>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">E-Mail</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-mail">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Escribenos la consulta!</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                        <label for="textareaConsulta" class="form-label">Escribenos la consulta!</label>
+                        <textarea class="form-control" id="textareaConsulta" rows="3"></textarea><br>
                         <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
-                    <!--<div>
-                        <label class="labelContacto" for="nombreyapellido">Nombre y Apellido</label> <br>
-                        <input class="inputContacto" type="text" id= "nombreyapellido" placeholder="Nombre y Apellido" required="required">
-                    </div>
-                    <div>
-                        <label class="labelContacto" for="email">E-mail</label> <br>
-                        <input class="inputContacto" type="text" id="email" placeholder="E-Mail" required="required">
-                    </div>
-                    <div>
-                        <label class="labelContacto" for="mobile">Teléfono</label> <br>
-                        <input class="inputContacto" type="text" id="mobile" placeholder="+54 9 3512052103" required="required">
-                    </div><br>
-                    <h3 class="h3Contacto">Tipo de consulta</h3>
-                    <div>
-                        <label class="labelContacto" for="particular">Particular</label>
-                        <input class="inputContacto" type="radio" id="particular" name="tipodeconsulta" required="required">   
-                        <label class="labelContacto" for="negocio" id="negocio" name="tipodeconsulta">Negocio</label>
-                        <input class="inputContacto" type="radio" id="negocio" name="tipodeconsulta" required="required">
-                    </div><br>
-                    <div>
-                        <textarea class="textareaContacto" name="consulta" id="consulta" cols="20" rows="10" placeholder="Escribenos tu consulta!"></textarea>
-                    </div><br>
-                    <div class="btnContacto">
-                        <input class="btnSubmit" type="submit" value="Enviar">
-                        <input class="btnReset" type="reset" value="Eliminar">
-                    </div>-->
                 </fieldset>
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer container">
         <span class="spanFooter">Redes Sociales:</span>
         <a href="https://www.facebook.com/kokeshicreativa" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/kokeshicreativa/?hl=es-la" target="_blank">Instagram</a>
