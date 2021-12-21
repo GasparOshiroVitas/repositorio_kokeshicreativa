@@ -3,6 +3,13 @@
   padding: 0; }
 
 /*Variables*/
+/*Efecto Zooom de imagenes*/
+.imageZoom {
+  transition: 1s; }
+
+.imageZoom:hover {
+  transform: scale(1.1); }
+
 /*Header-----------*/
 .header {
   background-color: #D6A692;
@@ -114,7 +121,8 @@
   .mainProducto img {
     height: 470px;
     width: 422px;
-    padding-top: 3%; }
+    padding-top: 3%;
+    border-radius: 4px; }
 
 .mainContacto {
   display: flex;

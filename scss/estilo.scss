@@ -10,6 +10,13 @@ $fs-h1: 40px;
 $fs-h2: 30px;
 $fontF: 'Montserrat', sans-serif;
 $fontColorFooter: #D6A692;
+/*Efecto Zooom de imagenes*/
+.imageZoom{
+    transition: 1s;
+}
+.imageZoom:hover{
+    transform: scale(1.1);
+}
 /*Header-----------*/
 .header{
     background-color: $bg-color-background-header ;
@@ -138,6 +145,7 @@ $fontColorFooter: #D6A692;
         height: 470px ;
         width: 422px ;
         padding-top: 3%;
+        border-radius: 4px;
     }
 }
 .mainContacto{
