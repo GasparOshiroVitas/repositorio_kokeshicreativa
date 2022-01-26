@@ -14,6 +14,7 @@ $fontColorFooter: #D6A692;
 .imageZoom:hover{
     transform: scale(1.1);
 }
+
 /*Mixin*/
 @mixin bgEstilo ($image, $position, $repeat){
     background-image:$image;
@@ -38,6 +39,10 @@ $fontColorFooter: #D6A692;
         align-content: center;
         justify-content: space-around;
     }
+    div{
+        display: flex;
+        justify-content: flex-end;
+    }
     ul{
         display: flex;
         flex-direction: row;
@@ -61,12 +66,25 @@ $fontColorFooter: #D6A692;
 /*Mains------------*/
 .mainIndex{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-color: $bg-color-background-main;
     height: auto;
     font-family: $fontF;
     padding-top: 5%;
+    padding-bottom: 10%;
+    span{
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        text-align: center;
+        justify-content: flex-end;
+        width: 300px;
+    }
+    iframe{
+        align-self: flex-end;
+        padding-left: 3%;
+    }
     section{
         @include bgEstilo(url(../img/imagen3.png),center center , no-repeat);
         display: flex;
@@ -78,6 +96,7 @@ $fontColorFooter: #D6A692;
         justify-content: center;
         align-items: center;
         padding-bottom: 80%;
+        margin-top: 15%;
     }
     h2{
         font-size: $fs-h2;
@@ -94,6 +113,7 @@ $fontColorFooter: #D6A692;
     height: auto;
     font-family: $fontF;
     padding-top: 5%;
+    padding-bottom: 10%;
     section{
         display: flex;
         flex-direction: row;
@@ -120,6 +140,7 @@ $fontColorFooter: #D6A692;
     height: auto;
     font-family: $fontF;
     padding-top: 5%;
+    padding-bottom: 10%;
     section{
         justify-content: center;
         display: flex;
@@ -141,11 +162,13 @@ $fontColorFooter: #D6A692;
     height: auto;
     font-family: $fontF;
     padding-top: 5%;
+    padding-bottom: 10%;
     section{
         background-color:hsla(0, 0%, 100%, 0.692);
         border-radius: 5px;
         padding: 5%;
         margin-bottom: 5%;
+        margin-top: 10%;
     }
 }
 /*Footer-----------------*/
