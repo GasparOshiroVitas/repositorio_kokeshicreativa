@@ -201,6 +201,7 @@ $fontColorFooter: #D6A692;
     }
 /*mains*/
     .mainIndex{
+        flex-direction: column;
         section{
             height: auto;
             div{
