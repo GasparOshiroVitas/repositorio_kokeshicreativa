@@ -1,4 +1,4 @@
-
+/*
 //Valoares a Ingresar
 let nombreCliente = prompt("Hola,como estás? Dinos tu nombre para una mejor experiencia")
 alert(`Hola! Precio de lista de compras:\nMate: $300 // Maceta: $400 // Taza: $200 // Cartera: $350`);
@@ -102,3 +102,4 @@ if(opcion==1) {
     console.log(`El precio total mas el envio es de $`+ resultadoEnvio)
 }
 }
+*/
