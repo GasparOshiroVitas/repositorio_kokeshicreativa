@@ -6,7 +6,12 @@ let formulario = document.getElementById("formulario");
 
 formulario.addEventListener("submit",(e)=>{
     e.preventDefault();
+    Swal.fire({
+        title: 'Gracias!',
+        text: 'En las proximas horas recibiras un e-mail con una respuesta a tu consulta',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+    })
     console.log(`E-mail del usuario es ${emailConsulta.value}`)
     console.log(consultaCliente.value)
-    alert(`Consulta enviada, se te enviará una respuesta a tu mail ${emailConsulta.value} estate atento`)
 });

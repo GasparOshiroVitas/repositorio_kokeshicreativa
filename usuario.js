@@ -19,12 +19,10 @@ class Producto{
         this.precio = this.precio * 1.21;
     };
 }
-
-
-//Items del carrito localstorage
+//Productos
 
 const listaProductos = []
-listaProductos.push(new Producto(`0`,`Maceta Mini`, `500`));
+listaProductos.push(new Producto(`0`,`Maceta Mini`,  500));
 listaProductos.push(new Producto(`1`,`Mate  Kokeshi`,`450`));
 listaProductos.push(new Producto(`2`,`Mate Kokeshi Texturado Blanco`,`550`));
 listaProductos.push(new Producto(`3`,`Mate Kokeshi Texturado Aqua`,`500`));
@@ -39,10 +37,68 @@ listaProductos.push(new Producto(`11`,`Maceta Mini Lisa`,`300`));
 listaProductos.push(new Producto(`12`,`Hornito Aromático`,`450`));
 listaProductos.push(new Producto(`13`,`Hornito Aromático`,`450`));
 
-const enLocalStorage = (key,value) =>{
+//Push de items al array de compra
+//Cambiar los console.log por toast 
+let items = document.getElementsByClassName(`imageZoom`)
+
+let arrCompra = []
+items[0].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[0].precio), console.log( `Agregue al carrito`)
+}
+items[1].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[1].precio)
+}
+items[2].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[2].precio)
+}
+items[3].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[3].precio)
+}
+items[4].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[4].precio)
+}
+items[5].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[5].precio)
+}
+items[6].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[6].precio)
+}
+items[7].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[7].precio)
+}
+items[8].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[8].precio)
+}
+items[9].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[9].precio)
+}
+items[10].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[10].precio)
+}
+items[11].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[11].precio)
+}
+items[12].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[12].precio)
+}
+items[13].ondblclick = () =>{
+    arrCompra.unshift(listaProductos[13].precio)
+}
+let valorInicial = 0;
+let sumaTotal = arrCompra.reduce((a,b) => a + b,
+0);
+console.log(sumaTotal);
+
+
+
+
+/*const enLocalStorage = (key,value) =>{
     localStorage.setItem(key,value)
 };
-enLocalStorage(`Lista de Productos`, JSON.stringify(listaProductos))
+
+
+let carrito = []
+
 //Agregar items al carrito
 
 let items = document.getElementsByClassName(`imageZoom`)
@@ -61,5 +117,6 @@ items[11].ondblclick = () =>{carrito.push(new Producto(`11`,`Maceta Mini Lisa`,`
 items[12].ondblclick = () =>{carrito.push(new Producto(`12`,`Hornito Aromático`,`450`)), console.log(`Se agregó Hornito Aromático al carrito`)}
 items[13].ondblclick = () =>{carrito.push(new Producto(`13`,`Hornito Aromático`,`450`)), console.log(`Se agregó Hornito Aromático al carrito`)}
 
-let carrito = []
-sessionStorage.setItem(`Carrito`,JSON.stringify(carrito))
+
+
+enLocalStorage(`carrito`, JSON.stringify(carrito))*/
