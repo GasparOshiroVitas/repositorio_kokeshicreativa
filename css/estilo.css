@@ -3,9 +3,6 @@
 .imageZoom {
   transition: 1s; }
 
-.imageZoom:hover {
-  transform: scale(1.1); }
-
 /*Mixin*/
 /*Header-----------*/
 .header {
