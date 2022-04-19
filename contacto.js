@@ -1,17 +1,35 @@
-let emailConsulta = document.getElementById("email");
+const emailConsulta = document.getElementById("email");
 
-let consultaCliente = document.getElementById("textareaConsulta");
+const consultaCliente = document.getElementById("textareaConsulta");
 
-let formulario = document.getElementById("formulario");
+const formulario = document.getElementById("formulario");
 
-formulario.addEventListener("submit",(e)=>{
+const boton =document.getElementById("boton")
+
+formulario.addEventListener("submit",function(e){
     e.preventDefault();
-    Swal.fire({
-        title: 'Gracias!',
-        text: 'En las proximas horas recibiras un e-mail con una respuesta a tu consulta',
-        icon: 'success',
-        confirmButtonText: 'Aceptar'
-    })
-    console.log(`E-mail del usuario es ${emailConsulta.value}`)
-    console.log(consultaCliente.value)
+
+    boton.value= "Enviando.."
+
+    const serviceID = 'default_service';
+    const templateID = 'template_b6vtmuo';
+
+
+     emailjs.sendForm(serviceID, templateID, this)
+        .then(()=>{
+            boton.value = "Enviar";
+            Swal.fire({
+                icon: 'success',
+                title: 'Ya recibimos tu consulta!',
+                text: 'En las proximas 72 horas resolveremos tu duda!',
+              });
+        },(error) =>{
+            boton.value ="Enviar";
+            Swal.fire({
+                icon: 'error',
+                title: `Ups!`,
+                text: 'Ha ocurrido un error '(JSON.stringify(error)),
+                footer: 'Porfavor intenta dentro de unos segundos'
+              });
+        });
 });

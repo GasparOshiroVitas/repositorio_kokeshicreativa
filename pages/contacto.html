@@ -54,9 +54,14 @@
                         <input type="email" class="form-control" id="email" placeholder="E-mail">
                     </div>
                     <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text"class="form-control" id="nombre" placeholder="Escribe tu nombre">
+
+                    </div>
+                    <div class="mb-3">
                         <label for="textareaConsulta" class="form-label">Escríbenos la consulta!</label>
                         <textarea class="form-control" id="textareaConsulta" rows="3" placeholder="Escribenos tu consulta!"></textarea><br>
-                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button id="boton" class="btn btn-primary" value= "enviar" type="submit">Enviar</button>
                     </div>
             </form>
         </section>
@@ -69,5 +74,11 @@
     </footer>
     <script src="../sweetalert.js"></script>
     <script src="../contacto.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('H9ROonCnN7jkD2Yip')
+  </script>
 </body>
 </html>
