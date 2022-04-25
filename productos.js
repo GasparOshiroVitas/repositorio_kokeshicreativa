@@ -46,21 +46,22 @@ function crearProductos() {
         const nodoSection = document.createElement(`section`)
         nodoSection.classList.add(`container`)
         //Titulo
-        const nodoTitulo = document.createElement (`h4`);
+        const nodoTitulo = document.createElement (`card-header-center`);
         nodoTitulo.classList.add(`card-title`);
         nodoTitulo.textContent = info.item;
         //Imagenes
         const nodoImagenes = document.createElement(`img`);
         nodoImagenes.classList.add(`img-fluid`);
+        nodoImagenes.classList.add(`card-img-top`)
         nodoImagenes.setAttribute(`src`,info.imagen);
         //Precio
         const nodoPrecio = document.createElement(`p`);
-        nodoPrecio.classList.add(`card-text`);
+        nodoPrecio.classList.add(`card-text-center`);
         nodoPrecio.textContent = `${info.precio}${pesos}`;
         //Boton
         const nodoBoton = document.createElement(`button`);
         nodoBoton.classList.add(`btn`,`btn-primary`);
-        nodoBoton.textContent = `+`;
+        nodoBoton.textContent = `Agregar al Carrito`;
         nodoBoton.setAttribute(`marcador`, info.id);
         nodoBoton.addEventListener(`click`,agregarAlCarrito);
         //Agregar al NODO
@@ -94,7 +95,7 @@ function crearCarrito(){
     // Crear lista de carrito
     const miNodo = document.createElement(`li`);
     miNodo.classList.add(`list-grup-item`,`text-right`);
-    miNodo.textContent = `${numeroUnidades} x ${miItem[0].nombre} - ${miItem[0].precio}${pesos}`;
+    miNodo.textContent = `${numeroUnidades} x ${miItem[0].item} - ${miItem[0].precio}${pesos}`;
     //Boton borrar
     const botonBorrar = document.createElement(`button`);
     botonBorrar.classList.add(`bntn`,`btn-danger`,`mx-5`);
