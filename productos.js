@@ -35,6 +35,7 @@ const DOMitems= document.getElementById(`main`)
 const DOMcarrito= document.getElementById(`carrito`)
 const DOMtotal= document.getElementById(`total`)
 const DOMbtnVaciar= document.getElementById(`btn-vaciar`)
+const localStorage= window.localStorage;
 
 //Funciones
 function crearProductos() {
@@ -77,6 +78,7 @@ function crearProductos() {
 function agregarAlCarrito(e){
     carrito.push(e.target.getAttribute(`marcador`))
     crearCarrito()
+    guardarCarritoLocalStorage()
 }
 
 function crearCarrito(){
@@ -117,6 +119,8 @@ function borrarItemCarrito(e){
         return carritoId !==id;
     });
     crearCarrito();
+
+    guardarCarritoLocalStorage();
 }
 //Calcular total a pagar
 function calcularTotal(){
@@ -131,9 +135,23 @@ function calcularTotal(){
 function vaciarCarrito(){
     carrito = [];
     crearCarrito()
+    localStorage.clear();
+}
+//LocalStorage
+
+function guardarCarritoLocalStorage(){
+    localStorage.setItem(`carrito`, JSON.stringify(carrito));
+}
+
+function cargarCarritoEnLocalStorage(){
+    if(localStorage.getItem(`carrito`) !== null){//Ver si habia uno previamente
+        //Guardarlos
+        carrito = JSON.parse(localStorage.getitem(`carrito`));
+    }
 }
 //evento vaciar
 DOMbtnVaciar.addEventListener(`click`, vaciarCarrito);
 //
+cargarCarritoEnLocalStorage();  
 crearProductos();
 crearCarrito();
