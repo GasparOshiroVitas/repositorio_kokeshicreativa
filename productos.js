@@ -35,7 +35,7 @@ const DOMitems= document.getElementById(`main`)
 const DOMcarrito= document.getElementById(`carrito`)
 const DOMtotal= document.getElementById(`total`)
 const DOMbtnVaciar= document.getElementById(`btn-vaciar`)
-const localStorage= window.localStorage;
+const miLocalStorage= window.localStorage;
 
 //Funciones
 function crearProductos() {
@@ -140,13 +140,13 @@ function vaciarCarrito(){
 //LocalStorage
 
 function guardarCarritoLocalStorage(){
-    localStorage.setItem(`carrito`, JSON.stringify(carrito));
+    miLocalStorage.setItem(`carrito`, JSON.stringify(carrito));
 }
 
 function cargarCarritoEnLocalStorage(){
-    if(localStorage.getItem(`carrito`) !== null){//Ver si habia uno previamente
+    if(miLocalStorage.getItem(`carrito`) !== null){//Ver si habia uno previamente
         //Guardarlos
-        carrito = JSON.parse(localStorage.getitem(`carrito`));
+        carrito = JSON.parse(miLocalStorage.getItem(`carrito`));
     }
 }
 //evento vaciar
