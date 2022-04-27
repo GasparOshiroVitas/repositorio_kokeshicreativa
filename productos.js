@@ -100,8 +100,8 @@ function crearCarrito(){
     miNodo.textContent = `${numeroUnidades} x ${miItem[0].item} - ${miItem[0].precio}${pesos}`;
     //Boton borrar
     const botonBorrar = document.createElement(`button`);
-    botonBorrar.classList.add(`bntn`,`btn-danger`,`mx-5`);
-    botonBorrar.textContent= `-`;
+    botonBorrar.classList.add(`bntn`,`btn-danger`);
+    botonBorrar.textContent= ``;
     botonBorrar.style.marginLeft = `16px`;
     botonBorrar.dataset.item = item;
     botonBorrar.addEventListener(`click`,borrarItemCarrito);
